@@ -1,0 +1,124 @@
+:root{
+    --main-black: rgb(0, 0, 0);
+    --main-white: rgb(255, 255, 255);
+    --main-hover: #2196F3;
+    --transition-duration: 1000ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --hero-background: #DCE5E2;
+}
+
+body {
+    font-family: 'Raleway', 'Times New Roman', sans-serif;
+    color: var(--main-black);
+    background-color: var(--main-white);
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    padding: 0 73px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remove default style */
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+
+.list {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    color: inherit;
+    padding: 0;
+}
+
+/* Main header */
+
+.main-header{
+    align-items: center;
+    justify-content: space-between;
+}
+.main-header > .logo{
+    width: 170px;
+    height: 21px;
+    margin-right: 285px;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.menu-item{
+    padding-top: 31px;
+    padding-bottom: 32px;
+    font-family: 'Inter', 'Times New Roman', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--main-black);
+
+    cursor: pointer;
+
+    transition-property: color, fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.main-nav > .menu-item:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.main-nav > .menu-item:nth-child(3){
+    margin-right: 44px;
+}
+
+.fast-icons{
+    display: flex;
+    gap: 22px;
+}
+
+.main-header .menu-item:hover{
+    color: var(--main-hover);
+    fill: var(--main-hover)
+}
+
+/* Hero section */
+
+.hero{
+    position: relative;
+    max-width: 1294px;
+    max-height: 550px;
+    background-color: var(--hero-background);
+    border-radius: 32px;
+}
+
+.link.to-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: 50%;
+}
+
+
+
+
