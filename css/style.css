@@ -110,15 +110,71 @@ img {
     max-height: 550px;
     background-color: var(--hero-background);
     border-radius: 32px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .link.to-left{
     position: absolute;
-    left: 0;
+    left: 19px;
     top: 50%;
     bottom: 50%;
 }
 
+.link.to-right {
+    position: absolute;
+    right: 19px;
+    top: 50%;
+    bottom: 50%;
+}
 
+.link.to-left, .link.to-right {
+    transition-property: fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
 
+.link.to-left:hover, .link.to-right:hover{
+    fill: var(--main-hover);
+}
+
+.hero-items{
+    display: flex;
+    align-items: center;
+}
+
+.hero-img{
+    width: 647px;
+    height: 550px;
+}
+
+.hero-description{
+    padding: 145px 3px 127px 56px;
+}
+
+.hero-header{
+    font-size: 58px;
+    line-height: 1.2;
+    margin-bottom: 19px;
+}
+.hero-text{
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 200px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+}
 
