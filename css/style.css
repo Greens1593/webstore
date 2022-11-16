@@ -11,6 +11,7 @@ body {
     font-family: 'Raleway', 'Times New Roman', sans-serif;
     color: var(--main-black);
     background-color: var(--main-white);
+    box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
@@ -144,12 +145,13 @@ img {
 }
 
 .hero-img{
-    width: 647px;
-    height: 550px;
+    min-width: 647px;
+    min-height: 550px;
 }
 
 .hero-description{
-    padding: 145px 3px 127px 56px;
+    padding-left:  56px;
+    padding-right: 3px;
 }
 
 .hero-header{
@@ -176,5 +178,34 @@ img {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
+
+    transition-property: background-color, color, border;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
 }
 
+.hero-btn:hover{
+    background-color: var(--main-hover);
+    color: var(--main-white);
+    border: none;
+}
+
+.decorative-lines{
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    right: 50%;
+
+    width: max-content;
+    display: flex;
+    gap: 34px;
+
+    transform: translateX(-50%);
+}
+
+.decorative-line{
+    display: block;
+    min-width: 194px;
+    height: 2px;
+    background-color: #000000;
+}
