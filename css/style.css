@@ -34,6 +34,21 @@ img {
     margin-right: auto;
 }
 
+.section-header {
+    font-size: 42px;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.section-description {
+    width: 628px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
 /* Remove default style */
 
 .link {
@@ -53,11 +68,18 @@ img {
 /* Main header */
 
 .container.main-header{
-    /* position: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
     width: 100%;
-    height: 80px; */
     align-items: center;
     justify-content: space-between;
+    background-color: var(--main-white);
+    border-bottom: 1px solid #ECECEC;;
+}
+.main{
+    padding-top: 95px;
 }
 .main-header > .logo{
     width: 170px;
@@ -107,9 +129,7 @@ img {
 }
 
 /* Hero section */
-/* .container.hero-container{
-    padding-top: 80px;
-} */
+
 .hero{
     position: relative;
     max-width: 1294px;
@@ -223,29 +243,18 @@ img {
     padding-top: 75px;
 }
 
-.lates-offers-header{
-    font-size: 42px;
-    line-height: 1.25;
-    text-align: center;
-    margin-bottom: 9px;
-}
-
-.lates-offers-description{
-    width: 628px;
-    font-size: 14px;
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 55px;
-}
 
 .list.lates-offers-list{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 1294px;
-    gap: 16px;
+    gap: 15px;
+    padding-bottom: 28px;
 }
 
 .lates-offers-list-item{
+    display: flex;
     box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
@@ -258,3 +267,92 @@ img {
     font-size: 32px;
     line-height: 1.2;
 }
+
+.lates-offers-list-item:nth-child(1){
+    flex-direction: column;
+    width: 639px;
+    height: 472px;
+    padding: 0 42px;
+}
+
+.lates-offers-list-item:nth-child(1) .lates-offers-list-product, 
+.lates-offers-list-item:nth-child(1) .lates-offers-list-slogan{
+    text-align: end;
+}
+
+.lates-offers-list-item:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+    width: 312px;
+    height: 792px;
+    padding: 143px 0px;
+}
+
+.lates-offers-list-item:nth-child(2) .lates-offers-list-product,
+.lates-offers-list-item:nth-child(2) .lates-offers-list-slogan {
+    text-align: center;
+}
+
+.lates-offers-list-item:nth-child(2) > .lates-offers-list-description{
+    padding-top: 41px;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.lates-offers-list-item:nth-child(3) {
+    flex-direction: column;
+    align-items: center;
+    width: 312px;
+    height: 792px;
+    padding: 115px 0px;
+}
+
+.lates-offers-list-item:nth-child(3) .lates-offers-list-product,
+.lates-offers-list-item:nth-child(3) .lates-offers-list-slogan {
+    text-align: center;
+}
+
+.lates-offers-list-item:nth-child(3)>.lates-offers-list-description {
+    padding-bottom: 42px;
+    padding-left: 39px;
+    padding-right: 39px;
+}
+
+.lates-offers-list-item:nth-child(4) {
+    position: absolute;
+    top: 544px;
+    left: 0;
+    align-items: center;
+    width: 639px;
+    height: 270px;
+    padding: 0 42px;
+}
+
+.lates-offers-list-item:nth-child(4) .lates-offers-list-product,
+.lates-offers-list-item:nth-child(4) .lates-offers-list-slogan {
+    text-align: end;
+}
+
+.lates-offers-list-item:nth-child(4)>.lates-offers-list-description {
+    padding-top: 87.5px;
+    padding-bottom: 87.5px;
+    padding-left: 46px;
+}
+
+/* Most seled items section */
+
+.seled-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 72px;
+    padding-bottom: 28px;
+}
+
+.seled-items > .section-description{
+    width: max-content;
+    margin-bottom: 31px;
+}
+
