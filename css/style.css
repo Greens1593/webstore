@@ -27,11 +27,21 @@ img {
     max-width: 100%;
 }
 
+/* Common blocks */
 .container{
     display: flex;
     padding: 0 73px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 72px;
 }
 
 .section-header {
@@ -41,7 +51,7 @@ img {
     margin-bottom: 9px;
 }
 
-.section-description {
+.section-header-description {
     width: 628px;
     font-size: 14px;
     line-height: 1.2;
@@ -208,6 +218,8 @@ img {
     transition-property: background-color, color, border;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+
+    cursor: pointer;
 }
 
 .hero-btn:hover{
@@ -237,10 +249,8 @@ img {
 }
 
 /* Letest offers and categories section */
-.container.latest-offers{
+.latest-offers-container{
     flex-direction: column;
-    align-items: center;
-    padding-top: 75px;
 }
 
 
@@ -250,6 +260,7 @@ img {
     flex-wrap: wrap;
     width: 1294px;
     gap: 15px;
+    margin: 0 auto;
     padding-bottom: 28px;
 }
 
@@ -341,18 +352,64 @@ img {
 
 /* Most seled items section */
 
-.seled-items{
-    display: flex;
+.seled-items-container{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-top: 72px;
-    padding-bottom: 28px;
 }
+
 
 .seled-items > .section-description{
     width: max-content;
     margin-bottom: 31px;
 }
 
+.seled-items-list{
+    display: flex;
+    gap: 28px;
+    margin: 0 auto;
+}
+
+.seled-items-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 303px;
+    height: 396px;
+}
+
+
+.seled-items-card-img{
+    width: 100%;
+    height: 270px;
+    object-fit: none;
+    object-position: 50% 50%;
+    margin-bottom: 9px;
+}
+
+.seled-items-card-header{
+    font-size: 22px;
+    line-height: 1.25;
+    margin-bottom: 9px;
+}
+
+.seled-items-card-description{
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 1.2;
+    color: #4B4B4B;
+    margin-bottom: 8px;
+}
+
+.seled-items-card-price{
+    position: absolute;
+    bottom: 0;
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* Section best around here */
+
+.container-best-around-here{
+    flex-direction: column;
+}
