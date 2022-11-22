@@ -59,6 +59,34 @@ img {
     margin-bottom: 55px;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 200px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+
+    transition-property: background-color, color, border;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--main-hover);
+    color: var(--main-white);
+    border: none;
+}
+
 /* Remove default style */
 
 .link {
@@ -200,7 +228,7 @@ img {
     line-height: 1.2;
     margin-bottom: 30px;
 }
-.hero-btn{
+.btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,11 +250,6 @@ img {
     cursor: pointer;
 }
 
-.hero-btn:hover{
-    background-color: var(--main-hover);
-    color: var(--main-white);
-    border: none;
-}
 
 .decorative-lines{
     position: absolute;
@@ -412,4 +435,106 @@ img {
 
 .container-best-around-here{
     flex-direction: column;
+    padding: 28px;
 }
+
+.best-around-here__list{
+    display: flex;
+    gap: 28px;
+    max-width: 1294px;
+    margin: 0 auto;
+}
+
+.best-around-here__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 41px;
+
+    border-radius: 16px;
+
+    min-width: 413px;
+
+    background-color: #F8F9FA;
+}
+
+.best-around-here__slogan{
+    font-size: 13px;
+    line-height: 1.29px;
+    padding-bottom: 5px
+}
+
+.best-around-here__header{
+    font-size: 28px;
+    line-height: 1.25;
+    margin-bottom: 30px;
+}
+
+.best-around-here__image{
+    display: inline-block;
+    margin-top: 30px;
+    object-fit: contain;
+    width: 259px;
+    height: 250px;
+}
+
+/* Idea section */
+
+.container__ideas{
+    padding-left: 28px;
+    padding-bottom: 28px;
+    padding-right: 28px;
+}
+
+.ideas__block{
+    display: flex;
+    gap: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 74px;
+}
+
+.ideas__img{
+    width: 620px;
+    height: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.ideas__list{
+    padding-top: 14px;
+}
+
+.ideas__item{
+    padding-bottom: 23px;
+
+    font-family: 'Inter';
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.ideas__link{
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: capitalize;
+
+    transition-property: color, fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.ideas__link:hover{
+    color: var(--main-hover);
+    fill: var(--main-hover);
+}
+
+
+
+
+
